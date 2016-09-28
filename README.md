@@ -8,7 +8,7 @@ ParseTab and ParseTabAlt are python modules that allows for easy parsing of eith
 LRT_database.py and concatenate_safir (which may be kinda the same) is my working script that helped me to import data to create a flat file variant database in order to classify automatically variants
 The format of this database is the following:
 
-<chromosome>TAB<position>TAB<refNuc>TAB<altNuc>TAB<Panel>TAB<BiologistName>TAB<ClinicalAnnotation>TAB<LastUpdate>
+chromosome TAB position TAB refNuc TAB altNuc TAB Panel TAB BiologistName TAB ClinicalAnnotation TAB LastUpdate
 
 If you are having trouble with this, just let me know and I will forge a file (I cannot give you the original file since this is sensitive data)
 
