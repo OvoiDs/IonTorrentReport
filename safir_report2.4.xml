@@ -1,6 +1,6 @@
-<tool id="create_safir32" name="Create annotated report 2.3 BETA">
+<tool id="create_safir32" name="Create annotated report 2.4 BETA">
   <description>with IonTorrent Variant Caller Plugin 4.0 AND 4.2.1 output with Database logging</description>
-  <command interpreter="python">Safir_Report-2.3.py -i $tabinput -n "$tabinput.name" -o $output -t $output2 --annotator "$__user_email__" --panel "$panel" </command>
+  <command interpreter="python">Safir_Report-2.4.py -i $tabinput -n "$tabinput.name" -o $output -t $output2 --annotator "$__user_email__" --panel "$panel" </command>
   <inputs>
     <param format="tabular,xls,csv" name="tabinput" type="data" label="xls file" />
     <param type="select" name="panel" label="Panel" multiple="false" >

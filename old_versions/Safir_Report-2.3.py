@@ -48,6 +48,7 @@ CANCERPANEL = "/data/galaxy/genome_db/SAFIR/CancerPanel.tsv"
 _1KG = "/data/galaxy/genome_db/ALL.autosomes.phase3_shapeit2_mvncall_integrated_v5.20130502.sites.vcf.gz"
 ESP = "/data/galaxy/genome_db/ESP.vcf.gz"
 CLINICS = "/data/galaxy/genome_db/BDD_variants.tsv.gz"
+DBFILE = "/data/galaprod/galaxy-dist/tools/safir_report/Annotated.db"
 tabFileName = ''
 
 RESIDUE_DICO = {"Gly": "G",
@@ -88,7 +89,7 @@ def removeDups(x):
     x = x.split(",")
     removed = list(set(x))
     return ",".join(removed)
-    
+
 
 class CancerPanel(object):
     def __init__(self, cancerpaneltsv):
@@ -1195,7 +1196,7 @@ USAGE
     book.write_DB()
     book.save()
 
-    with open('/data/galaprod/galaxy-dist/tools/safir_report/Annotated.db', 'a') as dbh:
+    with open(DBFILE, 'a') as dbh:
         print "Adding entry to DB"
         dbh.write(str(newDBEntry) + "\n")
     
