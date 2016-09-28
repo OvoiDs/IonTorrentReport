@@ -40,3 +40,8 @@ Please note that LRT stands for Laboratoire de Recherche Translationelle. Also, 
 ## 5) Evolution
 
 Please tell me what you would like the application to be, and I will try to arrange that for you. Pull Requests are welcomed ! 
+
+## 6) Author
+
+Yannick Boursin ( yannick.boursin@gustaveroussy.fr )
+Engineer at the Bioinformatics core at Gustave Roussy (BiGR)
