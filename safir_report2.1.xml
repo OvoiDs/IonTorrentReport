@@ -1,0 +1,43 @@
+<tool id="create_safir3" name="Create annotated report 2.1">
+  <description>with IonTorrent Variant Caller Plugin 4.0 AND 4.2.1 output with Database logging</description>
+  <command interpreter="python">Safir_Report-2.2.py -i $tabinput -n "$tabinput.name" -o $output -t $output2 --cassette "$cassette" --histo "$histo" --conclusion "$conclusion" --annotator "$__user_email__" </command>
+  <inputs>
+    <param format="tabular,xls,csv" name="tabinput" type="data" label="xls file" />
+    <param type="text" name="histo" label="N° Histo" value="None" required="True" />
+    <param type="text" name="cassette" label="N° Cassette" value="" required="False" />
+    <param type="select" name="conclusion" label="QC Conclusion" multiple="false" >
+        <option value="None">None</option>
+        <option value="Good">Good</option>
+        <option value="Warn">Warning</option>
+        <option value="Discard">Discard</option>
+    </param>
+  </inputs>
+  <outputs>
+    <data format="xls" name="output" label="${tool.name} on ${tabinput.name}: xls file." />
+    <data format="txt" name="output2" label="${tool.name} on ${tabinput.name}: tsv file." />
+  </outputs>
+  <help>
+
+This tool is intended to generate automatically a report for the SAFIR02 study. It uses the output from **IonTorrent Variant Caller 4.2.1** or from older version **4.0**, in tabular (extension xls) format to generate a standard report readable with any spreadsheet program, which is preannotated. It can take as input both compressed xls or flat xls, as galaxy features auto-decompression. 
+
+.. class:: infomark
+
+In order to interpret SIFT and PolyPhen-2 results, please keep the following in mind:
+
+**SIFT**::
+
+- T = Tolerated
+- D = Deleterious
+
+**PolyPhen-2**::
+
+- B = Benign
+- P = Possibly Damaging
+- D = Probably Damaging
+
+.. class:: warningmark
+
+**Columns Var.freq, ESP Freq and 1000G Freq have to be interpretated has percentages.**
+  </help>
+</tool>
+
