@@ -12,7 +12,11 @@ ParseTab and ParseTabAlt are python modules that are providing some interface th
 LRT_database.py is a working script that helped me to import data to create a flat file variant database in order to classify automatically variants
 The format of this database is the following:
 
+<<<<<<< HEAD
 old_versions speaks for itself
+=======
+chromosome TAB position TAB refNuc TAB altNuc TAB Panel TAB BiologistName TAB ClinicalAnnotation TAB LastUpdate
+>>>>>>> 50367c425a10d34ae2a9cd201b4fb7fbe58162e1
 
 * 2) Files
 
