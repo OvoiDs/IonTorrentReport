@@ -20,7 +20,7 @@ Before doing anything, you need to edit Safir_report python program and provide 
 You will need SnpSift, Snpeff ( snpeff.sourceforge.net ), dbNSFP, dbSNP, ESP, 1000Genome, and a tabix-indexed custom database file (if you do not have any, you should either index some empty file, or remove all references in code)
 
 The custom database has the following scheme: 
-<chromosome>TAB<position>TAB<refNuc>TAB<altNuc>TAB<Panel>TAB<BiologistName>TAB<ClinicalAnnotation>TAB<LastUpdate>
+	<chromosome>TAB<position>TAB<refNuc>TAB<altNuc>TAB<Panel>TAB<BiologistName>TAB<ClinicalAnnotation>TAB<LastUpdate>
 
 If you are having trouble with this, just let me know and I will forge a file (I cannot give you the original file since this is sensitive data)
 
